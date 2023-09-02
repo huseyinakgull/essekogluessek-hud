@@ -1,0 +1,185 @@
+@import url("https://fonts.googleapis.com/css2?family=Bai+Jamjuree:ital,wght@0,200;0,300;0,400;0,500;0,600;0,700;1,200;1,300;1,400;1,500;1,600;1,700&display=swap");
+* {
+	padding: 0;
+	margin: 0;
+	font-family: "Bai Jamjuree", sans-serif;
+}
+body {
+	overflow: hidden;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	width: 100vw;
+	height: 100vh;
+	background: none;
+	box-sizing: border-box;
+}
+
+main {
+	width: 23%;
+	height: 9vh;
+	position: absolute;
+	bottom: 15px;
+	left: 52%;
+	transform: translateX(-55%);
+}
+
+main .container {
+	width: 100%;
+	height: 100%;
+	opacity: 0.5;
+	border: 1px solid rgb(7, 7, 7) !important;
+	border-radius: 10px; 
+	background-color: rgb(7, 7, 7) !important;
+}
+
+.gun {
+	width: 20%;
+	height: 70%;
+	display: flex;
+	right: 23%;
+	bottom: -15px;
+	justify-content: center;
+	align-items: center;
+	margin-bottom: -35px;
+	position: relative;
+	border: 1px solid rgb(7, 7, 7) !important;
+	border-radius: 10px; 
+	background-color: rgb(7, 7, 7) !important;
+}
+
+.ammo {
+	position: absolute;
+	left: 50%;
+	transform: translateX(-50%);
+	top: 12%;
+	z-index: 1;
+	color: rgb(247, 249, 249);
+	font-size: 40px;
+	font-weight: 800;
+}
+
+.gun img {
+  width: 55px;
+}
+
+
+.layer-1 {
+	width: 100%;
+	height: 28%;
+	margin-bottom: 15px;
+}
+.layer-2 {
+	width: 100%;
+	height: 15%;
+}
+.layer-3 {
+	width: 100%;
+	height: 15%;
+}
+
+.layer-1 .wrapper {
+	width: 100%;
+	height: 100%;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	position: relative;
+}
+
+.layer-1 .wrapper img {
+	height: 130%;
+	margin-left: 113%;
+	margin-top: -9%;
+	border: 1px solid rgb(7, 7, 7) !important;
+	border-radius: 10px; 
+	background-color: rgb(7, 7, 7) !important;
+}
+
+.hp {
+	color: #fff;
+	position: absolute;
+	text-align: center;
+	font-size: 40px;
+	line-height: 14px;
+	font-weight: 800;
+	z-index: 999;
+	bottom: 105%;
+	right: 1%;
+}
+
+.layer-2 .wrapper {
+	width: 79%;
+	height: 100%;
+	position: relative;
+	padding: 4px;
+}
+
+.layer-2 .wrapper .hp {
+	left: 0;
+	top: 0;
+	position: absolute;
+	width: 100%;
+	height: calc(100% - -9px);
+	margin-left: 6px;
+	margin-right: 6px;
+	border-radius: 2px;
+	background-color: rgb(247, 249, 249);
+	margin-top: -65px;
+	z-index: -1;
+	transition: width 0.2s;
+}
+
+.layer-3 .wrapper {
+	width: calc(100%);
+	height: calc(100% - -13px);
+	margin-top: -30px;
+	display: flex;
+}
+
+.layer-3 .wrapper .step {
+	width: 7.6%;
+	height: calc(100% - -25px);
+	margin-left: 6px;
+	margin-right: 6px;
+	border-radius: 5px;
+	transition: background-color 0.1s;
+}
+
+.ar {
+	color: #fff;
+	position: absolute;
+	text-align: center;
+	font-size: 40px;
+	line-height: 14px;
+	font-weight: 800;
+	z-index: 999;
+	bottom: 85%;
+	right: 1%;
+}
+
+.layer-3 .wrapper .ar {
+	left: 0;
+	top: 0;
+	position: absolute;
+	width: 100%;
+	height: calc(100% - -9px);
+	border-radius: 1px;
+	background-color: rgb(247, 249, 249);
+	margin-top: -20px;
+	z-index: -1;
+	transition: width 0.2s;
+}
+
+.step {
+	position: relative;
+}
+
+.step::after {
+	content: "";
+	height: 50%;
+	position: absolute;
+	width: var(--width, 0);
+	background-color: rgb(247, 249, 249) !important;
+	border-radius: 2px;
+}
